@@ -1,0 +1,17 @@
+{
+    "dependencies": {},
+    "name": "typescript-express",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "dev": "ts-node-dev --respawn --transpile-only src/server.ts"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.13",
+        "@types/node": "^17.0.23",
+        "express": "^4.17.3",
+        "ts-node-dev": "^1.1.8",
+        "typescript": "^4.6.3"
+    }
+}
