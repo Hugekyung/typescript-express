@@ -1,5 +1,5 @@
-import User from "./user.dto";
+import User from "./dto/user.dto";
 
-const userMemory: User[] = [];
+const UserMemory: User[] = [];
 
-export default userMemory;
+export default UserMemory;
