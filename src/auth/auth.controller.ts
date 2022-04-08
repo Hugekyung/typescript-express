@@ -28,7 +28,7 @@ AuthRouter.post("/signin", (req: userRequest, res: Response) => {
         console.log("now userMemory>> ", UserMemory);
         const { username, password } = req.body;
 
-        const user = UserMemory.find((user) => user.username === username);
+        const user = AuthService.findByUserName({ username });
         if (user && user.password === password) {
             req.user = user;
         }

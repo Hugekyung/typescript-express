@@ -10,4 +10,9 @@ export class AuthService {
 
         return true;
     }
+
+    static findByUserName({ username }) {
+        const user = UserMemory.find((user) => user.username === username);
+        return user;
+    }
 }
