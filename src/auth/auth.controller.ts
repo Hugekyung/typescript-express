@@ -23,7 +23,7 @@ AuthRouter.post("/signup", (req: Request, res: Response) => {
     }
 });
 
-AuthRouter.post("/signin", (req: userRequest, res: Response) => {
+AuthRouter.post("/signin", (req: Request, res: Response) => {
     try {
         console.log("now userMemory>> ", UserMemory);
         const { username, password } = req.body;
